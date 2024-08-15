@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #242429;
+
+}
+
+a{
+    text-decoration: none;
+    color: #242429;
+}
+i{
+    color: #97F4FB;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #cffdff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 5px solid #242429;
+    background: rgb(255,184,184);
+background: linear-gradient(90deg, rgba(255,184,184,1) 0%, rgba(179,190,193,1) 50%, rgba(149,247,255,1) 100%);
+
+}
+
+header .logo p{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+/* ------------ Header nav section----- */
+header .headNav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+header .headNav p{
+    height: 60px;
+    width: 80px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-bottom: 5px solid transparent;
+}
+
+
+/* -----icon---- */
+
+header .headIcon{
+    height: 100%;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f1249;
+}
+.iconOne,
+.iconTwo{
+    text-align: center;
+    width: 40px;
+    font-size: 1.5rem;
+}
+
+ 
+/* ------------------------------- */
+
+
+header .headNav p:hover{
+    color: #636262f0;
+    border-bottom: 5px solid #242429;
+    transition: .5s;
+}
+
+header .headIcon i:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
+/* ======================================================== */
+
+.heroSection{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-image: url(hero\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.heroInfo{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info1{
+    width: 320px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #97F4FB;
+    cursor: default;
+}
+.heroInfo .info2 p{
+    font-size: 3rem;
+    color: #191919;
+    cursor: default;
+}
+
+.infoBtn{
+    height: 60px;
+    width: 200px;
+    background-color: #2F1249;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.infoBtn p{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.infoBtn:hover{
+    background-color: #FD8E23;
+    transition: 0.3s;
+}
+
+
+
+/* ✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔ */
+/* ✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔ */
+/* ✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔ */
+/* ✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔ */
+/* ✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔ */
+/* ✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔✔ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 750px) {
+    header{
+        height: 30px;
+        width: 100%;
+        border-bottom: 2px solid #242429;
+    }
+    header .logo p{
+        font-size: 1.2rem;
+    }
+    header .headNav,
+    header .headIcon{
+        display: none;
+    }
+    .headBar i{
+        color: #242429;
+    }
+    .heroSection{
+        height: 95vh;
+        position: absolute;
+    }
+
+    .heroInfo{
+        position: relative;
+        width: 300px;
+        top: 30%;
+        left: 10%;
+    }
+    .info1{
+        width: 200px;
+        font-size: 1rem;
+        background-color: #FD8E23;
+    }
+    .heroInfo .info2 p{
+        font-size: 2.8rem;
+    }
+    .infoBtn{
+        height: 40px;
+        width: 150px;
+        background-color: #2F1249;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .infoBtn p{
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 750px) {
+    header{
+        height: 45px;
+        width: 100%;
+        border-bottom: 2px solid #242429;
+    }
+    header .logo p{
+        font-size: 1.5rem;
+    }
+    header .headNav,
+    header .headIcon{
+        display: none;
+    }
+    .headBar i{
+        color: #242429;
+    }
+    .heroSection{
+        height: 93vh;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .heroInfo{
+        position: relative;
+        width: 300px;
+        top: 30%;
+        
+    }
+    .info1{
+        width: 200px;
+        font-size: 1rem;
+        background-color: #fff2e6;
+    }
+    .heroInfo .info2 p{
+        width: 300px;
+        font-size: 2.8rem;
+    }
+    .infoBtn{
+        height: 40px;
+        width: 150px;
+        background-color: #2F1249;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .infoBtn p{
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .headBar{
+        display: none;
+    }
+
+    header{
+        height: 60px;
+        width: 100%;
+        background-color: #cffdff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+        border-bottom: 5px solid #242429;
+        background: rgb(255,184,184);
+    background: linear-gradient(90deg, rgba(255,184,184,1) 0%, rgba(179,190,193,1) 50%, rgba(149,247,255,1) 100%);
+    
+    }
+    
+    header .logo p{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    
+    
+    /* ------------ Header nav section----- */
+    header .headNav{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    header .headNav p{
+        height: 60px;
+        width: 80px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        border-bottom: 5px solid transparent;
+    }
+    
+    
+    /* -----icon---- */
+    
+    header .headIcon{
+        height: 100%;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f1249;
+    }
+    .iconOne,
+    .iconTwo{
+        text-align: center;
+        width: 40px;
+        font-size: 1.5rem;
+    }
+    
+    
+    /* ------------------------------- */
+    
+    
+    header .headNav p:hover{
+        color: #636262f0;
+        border-bottom: 5px solid #242429;
+        transition: .5s;
+    }
+    
+    header .headIcon i:hover{
+        color: #ffffff;
+        cursor: pointer;
+    }
+    
+    
+    /* ======================================================== */
+    /* ======================================================== */
+    /* ======================================================== */
+    /* ======================================================== */
+    
+    .heroSection{
+        position: relative;
+        height: 90vh;
+        width: 100%;
+        background-image: url(hero\ img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .heroInfo{
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        left: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info1{
+        width: 320px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #97F4FB;
+        cursor: default;
+    }
+    .heroInfo .info2 p{
+        font-size: 3.3rem;
+        color: #191919;
+        cursor: default;
+    }
+    
+    .infoBtn{
+        height: 60px;
+        width: 200px;
+        background-color: #2F1249;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .infoBtn p{
+        height: 100%;
+        width: 100%;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .infoBtn:hover{
+        background-color: #FD8E23;
+        transition: 0.3s;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
